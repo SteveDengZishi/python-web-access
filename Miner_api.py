@@ -61,13 +61,13 @@ def checkPool():
     print("The difficulty index (blocksPerHour/hash_TH)in ethermine pool is %.3f" %diffIndex)
     
     try:
-        checkFile = open("data.txt","r")
+        checkFile = open("data.csv","r")
         checkFile.close()
-        appendFile = open("data.txt","a")
+        appendFile = open("data.csv","a")
         appendFile.write(",%.2f,%.3f" %(TH_hash, diffIndex))
         appendFile.close()
     except FileNotFoundError:
-        file = open("data.txt","w")
+        file = open("data.csv","w")
         file.write("%.2f,%.3f" %(TH_hash, diffIndex))
         file.close()
     
