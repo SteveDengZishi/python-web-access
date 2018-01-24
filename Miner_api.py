@@ -58,7 +58,7 @@ def checkPool():
     print("The ethermine.org pool hashrate is: %.2f TH/s" %TH_hash)
     print("The total number of Miners is %dK" %minerK)
     print("The total number of Machines Mining in pool network is %dK" %machineK)
-    print("The difficulty index (blocksPerHour/hash_TH)in ethermine pool is %.3f" %diffIndex)
+    print("The profit index (blocksPerHour/hash_TH)in ethermine pool is %.3f" %diffIndex)
     
     try:
         checkFile = open("data.csv","r")
