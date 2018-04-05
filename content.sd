@@ -1,0 +1,4 @@
+show("I am doing good")
+show("Hey")
+assign(a:5)
+show(a)
